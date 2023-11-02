@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+background-color: yellowgreen;
+text-align: center;
+font-size: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
 }
 
 .App-logo {
