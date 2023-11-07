@@ -113,7 +113,7 @@ function ChatComponent({token}) {
             </div>
             <div className="chatBox" id ="chatBox">
               { 
-                messages.map( (msg, index)=> <><MsgComponent key={index} message={msg}/><br/></>)
+                messages.map( (msg, index)=> <div key={index}><MsgComponent  message={msg}/></ div>)
               }
                 
             </div>
