@@ -2,8 +2,18 @@ import React, { useState } from 'react';
 import './index.css';
 import './login.css';
 import './chat.css';
-import {useNavigate } from "react-router-dom";
+import {useNavigate, Link } from "react-router-dom";
 
+
+function InscriptionLink() {
+    return (
+        <div>
+            <ul>
+                <li><Link to="/inscription">Inscription link</Link></li>
+            </ul>
+        </div>
+    );
+};
 
 function LoginComponent() {
   const [login,setLogin] = useState();
@@ -51,6 +61,9 @@ function LoginComponent() {
                     <button>Envoyer</button>
                 </div>
             </form>
+            <div>
+              <InscriptionLink/>
+            </div>
         </main>
     </div>
   );

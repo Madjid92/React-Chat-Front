@@ -46,7 +46,7 @@ function ChatComponent() {
     },[])
 
     const messageRef = useRef(null);
-  
+
     const elementMsg = (
       <div>
           <header>

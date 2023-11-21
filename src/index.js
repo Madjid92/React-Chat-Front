@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import ChatComponent from './chat';
 import LoginComponent from './login';
+import InscriptionComponent from './inscription';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, redirect, RouterProvider } from "react-router-dom";
 
@@ -43,10 +44,13 @@ const router = createBrowserRouter([
       path: "/login",
       element: <LoginComponent />,
     },
+    {
+      path: "/inscription",
+      element: <InscriptionComponent />,
+    }
   ]);
 
 root.render(
-
     <RouterProvider router={router} />
 );
 
