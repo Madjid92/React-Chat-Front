@@ -49,7 +49,7 @@ function ChatComponent() {
 
     const elementMsg = (
       <div>
-          <header>
+          <header className='headerChat'>
               <h1> Messagerie des internautes</h1>
           </header>
           <main>
@@ -63,9 +63,9 @@ function ChatComponent() {
                   
               </div>
               <div>
-                  <label htmlFor='valueMessage'>Insérez votre message</label>
-                  <input name='inputMsg' type="text" id="valueMessage" ref={messageRef} />
-                  <input type="button" value="Envoyer" onClick={
+                  <label className='messageInout' htmlFor='valueMessage'>Insérez votre message</label>
+                  <input className='messageInput' name='inputMsg' type="text" id="valueMessage" ref={messageRef} />
+                  <input className='messageButton' type="button" value="Envoyer" onClick={
                     ()=> { 
                       saveMessages(messageRef.current.value);
                   }} />

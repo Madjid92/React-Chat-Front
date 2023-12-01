@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import './index.css';
 import './login.css';
-import './chat.css';
 import {useNavigate, Link } from "react-router-dom";
 
 
@@ -38,7 +36,7 @@ function LoginComponent() {
         }); 
         if(response.status === 200) {
           const data = await response.json();
-          localStorage.setItem("token", data.hashPwd);
+          localStorage.setItem("token", data.token);
           navigate("/");
         }
       } catch (e) {
@@ -48,17 +46,17 @@ function LoginComponent() {
 
   const elementLogin = (
     <div>
-        <header>
+        <header className='headerLogin'>
             <h1>Bienvenue au forum des développeurs</h1>
         </header>
         <main>
             <form onSubmit={checkLogin}>
                 <div className="labelsInputsLogin">
-                    <label htmlFor="userLogin">Login</label>
-                    <input name="login" type="text" id='userLogin' onChange={(e)=> setLogin(e.target.value)} />
-                    <label htmlFor="userMotDePasse">Mot de Passe</label>
-                    <input name="password" type="text" id='userMotDePasse' onChange={(e)=> setPassword(e.target.value)}/> 
-                    <button>Envoyer</button>
+                    <label className='loginLabel' htmlFor="userLogin">Login</label>
+                    <input className='login_Input' name="login" type="text" id='userLogin' onChange={(e)=> setLogin(e.target.value)} />
+                    <label className='loginPasswordLabel' htmlFor="userMotDePasse">Mot de Passe</label>
+                    <input className='loginPasswordInput' name="password" type="text" id='userMotDePasse' onChange={(e)=> setPassword(e.target.value)}/> 
+                    <button className='loginButton'>Se connecter</button>
                 </div>
             </form>
             <div>

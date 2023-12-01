@@ -1,20 +1,12 @@
 header {
-    background-color: aquamarine;
+    background-color: greenyellow;
     text-align: center;
-    
 }
-.titleChatBox {
-    margin-bottom: 10px;
+
+.labelsInputsInscription{
+    margin-left: 5px;
 }
-.chatBox {
-    background-color: beige;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    height: 100px;
-    overflow: scroll;
-}
+
 .msgUseradded{
     background-color: green;
     border-radius: 10%;
@@ -25,12 +17,58 @@ header {
     padding-bottom: 3px;
 }
 
-/*input:invalid {
-    border: 1px solid red;
-  }
-  
-input:valid {
-    border: 1px solid black;
-}*/
+.textInscription{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.first_nameInput {
+    margin-left: 101px;
+    padding-right: 100px;
+}
+
+.last_nameInput{
+    margin-left: 103px;
+    padding-right: 100px;
+}
+
+.loginInput {
+    margin-left: 138px;
+    padding-right: 100px;
+}
+
+.emailInput{
+    margin-left: 135px;
+    padding-right: 100px;
+}
+
+.passwordInput{
+    margin-left: 106px;
+    padding-right: 100px;
+}
+
+.password_confirmationInput{
+    margin-left: 10px;
+    padding-right: 100px;
+}
+
+.divSubmission{
+    margin-top: 20px;
+}
+
+.buttonSubmission {
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 2px;
+    border:solid 2px;
+    padding-bottom: 2px;
+    margin-left: 11.4%;
+}
+
+.buttonSubmission:hover{
+    background-color: rgb(128, 240, 58);
+}
 
 

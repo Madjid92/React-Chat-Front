@@ -5,6 +5,7 @@ import LoginComponent from './login';
 import InscriptionComponent from './inscription';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, redirect, RouterProvider } from "react-router-dom";
+//import jsonwebtoken from 'jsonwebtoken';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

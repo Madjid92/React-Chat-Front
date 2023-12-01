@@ -1,7 +1,36 @@
-header {
-    background-color: aquamarine;
+.headerLogin {
+    background-color: rgb(70, 177, 216);
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.loginLabel{
+    margin-left: 5px;
+}
+
+.login_Input, .loginPasswordInput{
+    padding-right: 100px;
+    margin-left: 5px;
+}
+
+.loginPasswordLabel{
+    margin-left: 50px;
+}
+
+.loginButton{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    margin-left: 50px;
+}
+
+.loginButton:hover{
+    background-color: rgb(181, 207, 225);
+}
+
+.divLink{
+    background-color: gray;
 }
 
